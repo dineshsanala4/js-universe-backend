@@ -10,7 +10,7 @@ const app = express();
 
 const helmet = require("helmet");
 
-var allowedOrigin = ["http://192.168.0.174:4000"];
+var allowedOrigin = ["http://192.168.0.174:4000", "http://localhost:4000"];
 const corsOptions = {
   origin: function (origin, callback) {
     if (allowedOrigin.indexOf(origin) !== -1 || !origin) {
