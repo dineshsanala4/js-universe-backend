@@ -23,6 +23,31 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
+const fruits = [
+  "Apple",
+  "Mango",
+  "Banana",
+  "Orange",
+  "Appricot",
+  "Pomogranate",
+  "Guvava",
+  "Blackberry",
+  "Cherry",
+  "Sapota",
+  "Custured Apple",
+  "Pineapple",
+  "Lemon",
+  "Watermelon",
+  "Strawberry",
+  "Kiwi",
+  "Papaya",
+  "Peach",
+  "Grapes",
+  "Eclair",
+  "Honeycomb",
+  "Jellybean",
+];
+
 const blogs = [
   {
     id: "0",
@@ -114,8 +139,21 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get("/blogs", (req, res) => {
+app.get("/api/blogs", (req, res) => {
   res.json(blogs);
+});
+
+app.get("/api/fruits", (req, res) => {
+  const { filter } = req.query;
+
+  const filteredFruits = fruits.filter(
+    (fruit) =>
+      fruit.substr(0, filter.length).toLowerCase() === filter.toLowerCase()
+  );
+
+  console.log(filteredFruits);
+
+  res.json(filteredFruits);
 });
 
 // Start the server
