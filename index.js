@@ -25,6 +25,18 @@ app.use(cors(corsOptions));
 
 const fruits = [
   "Apple",
+  "Avocado",
+  "Coconut",
+  "Almond",
+  "Alpine Strawberry",
+  "African Cherry",
+  "Acai",
+  "Abiu",
+  "Abiurana",
+  "Ackee",
+  "Annatto",
+  "Acerola",
+  "Alligator Apple",
   "Mango",
   "Banana",
   "Orange",
@@ -144,16 +156,32 @@ app.get("/api/blogs", (req, res) => {
 });
 
 app.get("/api/fruits", (req, res) => {
-  const { filter } = req.query;
+  const { filter, page, size } = req.query;
 
-  const filteredFruits = fruits.filter(
+  if (!filter || !page || !size) {
+    res.json(fruits);
+    return;
+  }
+
+  let filteredFruits = fruits.filter(
     (fruit) =>
       fruit.substr(0, filter.length).toLowerCase() === filter.toLowerCase()
   );
 
-  console.log(filteredFruits);
+  const startIndex = (page - 1) * size;
+  const endIndex = parseInt(startIndex) + parseInt(size);
 
-  res.json(filteredFruits);
+  const paginatedFruites = filteredFruits.slice(startIndex, endIndex);
+
+  const response = {
+    totalPages: Math.trunc(filteredFruits.length / size) + 1,
+    currentPage: parseInt(page),
+    data: paginatedFruites,
+  };
+
+  console.log(response);
+
+  res.json(response);
 });
 
 // Start the server
