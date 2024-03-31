@@ -1,3 +1,6 @@
+const fruits = require("./fruits");
+const blogs = require("./blogs");
+
 const express = require("express");
 const httpsLocalhost = require("https-localhost");
 const session = require("express-session");
@@ -22,74 +25,6 @@ const corsOptions = {
 };
 
 app.use(cors(corsOptions));
-
-const fruits = [
-  "Apple",
-  "Avocado",
-  "Coconut",
-  "Almond",
-  "Alpine Strawberry",
-  "African Cherry",
-  "Acai",
-  "Abiu",
-  "Abiurana",
-  "Ackee",
-  "Annatto",
-  "Acerola",
-  "Alligator Apple",
-  "Mango",
-  "Banana",
-  "Orange",
-  "Appricot",
-  "Pomogranate",
-  "Guvava",
-  "Blackberry",
-  "Cherry",
-  "Sapota",
-  "Custured Apple",
-  "Pineapple",
-  "Lemon",
-  "Watermelon",
-  "Strawberry",
-  "Kiwi",
-  "Papaya",
-  "Peach",
-  "Grapes",
-  "Eclair",
-  "Honeycomb",
-  "Jellybean",
-];
-
-const blogs = [
-  {
-    id: "0",
-    title: "Article 1",
-    content: "Lorem ipsum dolor sit amet, consectetur adip",
-    date: "7-3-2024",
-    author: "Dhinesh Sanala",
-  },
-  {
-    id: "1",
-    title: "Article 2",
-    content: "Lorem ipsum dolor sit amet, consectetur adip",
-    date: "7-3-2024",
-    author: "Dhinesh Sanala",
-  },
-  {
-    id: "2",
-    title: "Article 3",
-    content: "Lorem ipsum dolor sit amet, consectetur adip",
-    date: "7-3-2024",
-    author: "Dhinesh Sanala",
-  },
-  {
-    id: "3",
-    title: "Article 4",
-    content: "Lorem ipsum dolor sit amet, consectetur adip",
-    date: "7-3-2024",
-    author: "Dhinesh Sanala",
-  },
-];
 
 // const redirectToHttps = (req, res, next) => {
 //   if (req.headers["x-forwarded-proto"] !== "https") {
