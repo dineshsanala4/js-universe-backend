@@ -59,6 +59,7 @@ const fruits = [
   "Wine Berry",
   "Yellow Grape",
   "Yali Pear",
+  "Zarzamora",
 ];
 
 module.exports = fruits;
