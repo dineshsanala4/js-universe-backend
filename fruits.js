@@ -50,6 +50,7 @@ const fruits = [
   "Olives",
   "Opal Apple",
   "Passion Fruit",
+  "Peer",
   "Pacific Rose Apple",
   "Quararibea Cordata Fruit",
   "Queen Anne Cherries",
