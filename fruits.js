@@ -47,6 +47,7 @@ const fruits = [
   "Nuts",
   "Naranja",
   "Noda Plum",
+  "Plum",
   "Olives",
   "Opal Apple",
   "Passion Fruit",
