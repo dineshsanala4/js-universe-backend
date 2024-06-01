@@ -43,6 +43,7 @@ const fruits = [
   "Drew Berry",
   "Dragon Fruit",
   "Fig",
+  "Green Fig",
   "Ice Apple",
   "Nuts",
   "Naranja",
