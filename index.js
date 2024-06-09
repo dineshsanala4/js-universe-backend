@@ -169,6 +169,7 @@ app.listen(PORT, () => {
 // 7. Access-Control-Allow-Origin
 // 8. Cross-Origin-Opener-Policy
 // 9. X-Frame-Options
+// 10. Cache-Control
 
 // Also use checksums (MD5 or SHA-256) for data integrity verification
 
