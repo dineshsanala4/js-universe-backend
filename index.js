@@ -152,7 +152,6 @@ app.listen(PORT, () => {
 // 2. This results in accessing the complete DOm of the parent window
 // 3. Click Hijacking - Layering one web site on top of another & faking the clicks
 // 4. Sessions & Cookies should be kept safe from the child IFrames
-// (Use - Cross Origin Opener Policy)
 
 // Mitigations :-
 // 1. Allways use Cross-Origin-Opener-Policy: same-origin to avoid unauthorized IFrame usage
