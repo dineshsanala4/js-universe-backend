@@ -125,7 +125,7 @@ app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
 
-// Security Vunerabilities & Solutions
+// Security Vunerabilities & Solutions :-
 
 // XSS - Cross Server Scripting
 
