@@ -127,7 +127,7 @@ app.listen(PORT, () => {
 
 // Security Vunerabilities & Solutions :-
 
-// XSS - Cross Server Scripting
+// XSS - Cross Server Scripting :-
 
 // Different ways of attacking :-
 // 1. Runing scripts through the forms
