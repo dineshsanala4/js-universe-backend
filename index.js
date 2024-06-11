@@ -145,7 +145,7 @@ app.listen(PORT, () => {
 // 5. Sanitize the data using DomPurify npm package when even using innerHTML etc.
 // 6. Use CSP - Content Security Policy Headers - Check above code
 
-// IFrame Protection
+// IFrame Protection :-
 
 // Different Vunerubilities :-
 // 1. When loading external IFRames, our parent IFrame access should not be revealed
@@ -170,6 +170,7 @@ app.listen(PORT, () => {
 // 8. Cross-Origin-Opener-Policy
 // 9. X-Frame-Options
 // 10. Cache-Control
+// 11. Content-Range
 
 // Also use checksums (MD5 or SHA-256) for data integrity verification
 
