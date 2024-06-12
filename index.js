@@ -172,7 +172,7 @@ app.listen(PORT, () => {
 // 10. Cache-Control
 // 11. Content-Range
 
-// Also use checksums (MD5 or SHA-256) for data integrity verification
+// Also use checksums (MD5 or SHA-256) for data integrity verification!
 
 // Server Side JS Injection :-
 
